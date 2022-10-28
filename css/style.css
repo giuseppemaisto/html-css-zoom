@@ -28,24 +28,42 @@ header{
 }
 
 main{
-    background-color: blue;
+    background-color: black;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
 }
 .container{
-    display: flex;
+    width: 75%;
+    margin: 0 auto;
+ 
+    position: relative;
+    
 }
 .row{
     display: flex;
-    width: calc(100vw / 7);
-    align-items: center;
+    width: 100%;
+    padding-right: 200px;
+    
 }
 .col-20{
     width: 100%;
     margin: 0 10px;
-    background-color: aqua;
+    background-color: black;
+    position: relative;
 }
 img{
     height: 100px;
     width: 150px;
+    padding-right:20px ;
+}
+.text{
+    position: absolute;
+    left:10px;
+    top: 80px;
+    background-color: gray;
+}
+
+footer{
+    height: 50px;
+    background-color: black;
 }
