@@ -7,7 +7,7 @@ body{
     background-color: black;
 }
 header{
-    height: 10vh;
+    height: 50px;
     margin-bottom: 20px;
 }
 .container-header{
@@ -28,8 +28,9 @@ header{
 }
 main{
     background-color: black;
-    height: 80vh;
-    width: 100vw; 
+    height: calc(100vh - 130px);
+    overflow-y: auto;
+     
 }
 .container{
     width: 75%;
@@ -55,8 +56,8 @@ main{
 
 footer{
     background-color: rgb(23, 22, 22);
-    height: 10vh;
-    width: 100vw;
+    height: 80px;
+    
     display: flex;
    
 }
