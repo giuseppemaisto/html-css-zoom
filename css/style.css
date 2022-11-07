@@ -29,99 +29,70 @@ header{
 main{
     background-color: black;
     height: calc(100vh - 130px);
-    overflow-y: auto;
-     
+    overflow-y: auto;  
 }
-.container{
-    width: 75%;
-    margin: 0 auto;  
+.full-container{
+    width: 95%;
+    margin: 0 auto;
 }
+
 .row{
-    display: flex;
-    margin-bottom: 20px; 
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap;
 }
-.col-20{
+.col-14{
     width: calc(100% / 7);
-    margin: 0 10px ;
+    margin: 5px;
+}
+.partecipant-card{
+    width: 100%;
+    height: 100px;
     position: relative;
 }
-.name{
+.partecipant-card img{
+    width: 100%;
+    height: 100%;
+}
+.label-name{
     position: absolute;
-    top: 80px;
-    right: 50px;
-    background-color: gray;
-    font-size: 15px; 
+    bottom: 0;
+    left: 0;
+    padding: 5px;
     color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
 }
 
 footer{
     background-color: rgb(23, 22, 22);
     height: 80px;
-    
     display: flex;
+    justify-content: space-between;
    
 }
-.container-footer{
-    width: 100%;
-}
-
-
-.row-footer{
+.footer-left, .footer-right, .footer-center{
     display: flex;
-    width: 100%;
-    margin-top: 20px;
     align-items: center;
-    justify-content: space-between;
-}
-
-.col-25{
-    height: 50px;
-    width: 25%;
-    
-
-}
-.col-50{
-    height: 50px;
-    width: 50%;
-
-}
-.icone{
-  font-size: 30px;
-  display: flex;
-  padding: 5px;
- color: white;
-}
-.testo-icone{
-    font-size: 10px;
-    
-}
-ul{
-    list-style-type: none;
-    display: flex;
-    
-}
-li{
-    font-size: 30px;
-    margin-top: 10px;
-    margin-left: 30px;
+    justify-content: space-around;
     color: white;
 }
-.share{
-    color: green;
-}
-.tasto{
-    width: 50%;
-    
-}
-.end-meeting{
+footer .icon{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
-    
+    justify-content: space-around;
+    padding: 10px;
 }
-h4{
+span{
+    font-size: 14px;
+}
+.button-right{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(75, 75, 75);
     color: red;
-}
-.end-meeting:hover{
-    background-color: grey;
+    padding: 20px;
+    border: none;
 }
